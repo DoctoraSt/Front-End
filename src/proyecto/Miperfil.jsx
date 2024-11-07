@@ -1,13 +1,15 @@
-import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import React from "react";
 import '../CSS/bootstrapCSS/bootstrap.css';
-import '../CSS/registro.css';
+import '../CSS/Miperfil.css';
 import icono from '../CSS/images/list.png';
-import axios from "axios";
 import BarraNav from "./BarraNav";
 
 function Miperfil(){
-    <h1>Este es el área del perfil de usuario</h1>
+    return(
+        <div>
+            <h2>Información personal</h2>
+        </div>
+    );
 }
 
 export default Miperfil;

@@ -15,10 +15,10 @@ function BarraNav() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Inicio</Nav.Link>
+                        <Nav.Link href="./lista-compras">Inicio</Nav.Link>
                         <Nav.Link href="#link">Promociones</Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Mi perfil</NavDropdown.Item>
+                        <NavDropdown title="Información personal" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="./Miperfil">Mi perfil</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Mis tarjetas</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>

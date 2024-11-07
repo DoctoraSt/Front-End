@@ -21,7 +21,7 @@ function App() {
         {/*Rutas con Barra de navegación*/}
         <Route element={<Layout/>}>
           <Route path="/lista-compras" element={<ListaCompras/>}/>
-          <Route path="/perfil" element={<Miperfil/>}/>
+          <Route path="/Miperfil" element={<Miperfil/>}/>
         </Route>
 
         {/* Si agregas más rutas*/}
