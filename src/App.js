@@ -4,11 +4,10 @@ import Login from "./proyecto/Login";
 import { Navigate } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ListaCompras from "./proyecto/ListaCompras";
-import Perfil from "./proyecto/perfil";
-import Navbar from "./proyecto/BarraNav";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BarraNav from "./proyecto/BarraNav";
 import Layout from "./proyecto/Layout";
+import Miperfil from "./proyecto/Miperfil";
 
 
 function App() {
@@ -22,6 +21,7 @@ function App() {
         {/*Rutas con Barra de navegación*/}
         <Route element={<Layout/>}>
           <Route path="/lista-compras" element={<ListaCompras/>}/>
+          <Route path="/perfil" element={<Miperfil/>}/>
         </Route>
 
         {/* Si agregas más rutas*/}

@@ -6,8 +6,8 @@ import icono from '../CSS/images/list.png';
 import axios from "axios";
 import BarraNav from "./BarraNav";
 
-function perfil(){
+function Miperfil(){
     <h1>Este es el área del perfil de usuario</h1>
 }
 
-export default perfil;
+export default Miperfil;
