@@ -5,8 +5,10 @@ import { Navigate } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ListaCompras from "./proyecto/ListaCompras";
 import Perfil from "./proyecto/perfil";
-import Navbar from "./proyecto/NavBar";
+import Navbar from "./proyecto/BarraNav";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BarraNav from "./proyecto/BarraNav";
+import Layout from "./proyecto/Layout";
 
 
 function App() {
@@ -14,16 +16,16 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
-
         <Route path="/registro" element={<Registro/>} />
         <Route path="/login" element={<Login />} />
 
+        {/*Rutas con Barra de navegación*/}
+        <Route element={<Layout/>}>
+          <Route path="/lista-compras" element={<ListaCompras/>}/>
+        </Route>
+
         {/* Si agregas más rutas*/}
         <Route path="/lista-compras" element={<ListaCompras />} />
-        <Navbar/>
-        <Routes>
-          <Route path="/Mi Perfil" element={<Perfil/>}/>
-        </Routes>
 
         {/* Ruta por defecto para manejar 404*/}
         <Route path="*" element={<h1>Página no encontrada</h1>} />

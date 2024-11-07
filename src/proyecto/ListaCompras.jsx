@@ -5,14 +5,12 @@ import '../CSS/bootstrapCSS/bootstrap.css';
 import nintendo from '../CSS/images/NintendoSwitch.png';
 import play from '../CSS/images/play5.png';
 import carrito from '../CSS/images/carrito.png';
-import navBar from "./NavBar";
+import BarraNav from "./BarraNav";
 
 
 function ListaCompras() {
     return (
         <>
-        
-
         <div className="row">
             <h1>Shopping List</h1>
             <div className="container-lista col-5">
