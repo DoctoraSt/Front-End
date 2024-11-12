@@ -4,6 +4,8 @@ import '../CSS/bootstrapCSS/bootstrap.css';
 import '../CSS/registro.css';
 import icono from '../CSS/images/list.png';
 import axios from "axios";
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
 
 function Registro(){
     const [usuario, setUsuario] = useState('');
@@ -49,21 +51,24 @@ function Registro(){
                     <>
                     <div className="col-6">
                         <h2>Crea un usuario</h2>
-                        <label>Ingrese nombre de usuario:</label>
-                        <input type="text" placeholder="Nombre de usuario" 
-                        onChange={(e) =>{setUsuario(e.target.value)}}/>
                         <br/>
-                        <br/>
-                        <label>Ingrese su correo electrónico:</label>
-                        <input type="email" placeholder="Correo electrónico"
-                        onChange={(e) =>{setEmail(e.target.value)}}/>
-                        <br/>
-                        <br/>
-                        <label>Ingrese una contraseña:</label>
-                        <input type="password" placeholder="Contraseña"
-                        onChange={(e)=>{setPass(e.target.value)}}/>
-                        <br/>
-                        <br/>
+                        <div>
+                            <FloatingLabel controlId="floatingInput" label="Nombre de Usuario" className="mb-3">
+                                <Form.Control type="text" placeholder="Nombre de usuario"
+                                value={usuario}
+                                onChange={(e)=> setUsuario(e.target.value)}/>
+                            </FloatingLabel>
+                            <FloatingLabel controlId="floatingInput" label="Correo Electrónico" className="mb-3">
+                                <Form.Control type="email" placeholder="name@example.com" 
+                                value={email}
+                                onChange={(e)=> setEmail(e.target.value)}/>
+                            </FloatingLabel>
+                            <FloatingLabel controlId="floatingInput" label="Contraseña" className="mb-3">
+                                <Form.Control type="password" placeholder="Contraseña"
+                                value={pass}
+                                onChange={(e)=> setPass(e.target.value)}/>
+                            </FloatingLabel>
+                        </div>
                         <div>
                             <button onClick={sendDatos}>Registrar</button>
                         </div>

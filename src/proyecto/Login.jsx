@@ -4,21 +4,23 @@ import '../CSS/login.css';
 import '../CSS/bootstrapCSS/bootstrap.css';
 import icono from '../CSS/images/list.png';
 import axios from 'axios';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
 
 //Parte de arriba donde se coloca toda la lógica para cargar la información
 function Login(){
-    const [usuario, setUsuario] = useState('');
+    const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [message, setMessage] = useState('');
     const [loggedIn, setLoggedIn] = useState(false);
 
 
     const handleLogin = () =>{
-        if(!usuario || !pass){
+        if(!email || !pass){
             setMessage("Favor de completar los campos");
             return;
         } else{
-            axios.post("http://localhost:3000/login", {usuario: usuario, pass: pass})
+            axios.post("http://localhost:3000/login", {email: email, pass: pass})
             .then((data) => {
                 setMessage(data.data.message);
                 if(data.data.sucess){
@@ -34,10 +36,11 @@ function Login(){
     };
 
     if(loggedIn){
-        return <Navigate to = "./ListaCompras" />;
+        return <Navigate to = "./lista-compras" />;
     }
 
     return(
+        <>
     <div className="image">
         <div className="fondo">
             <div class="container">
@@ -46,41 +49,36 @@ function Login(){
                         <h1>Shopping List</h1>
                         <img src={icono} alt="icono" height={200} width={200}/>
                     </div>
-
                     <div className="col-6">
-                        <label>Ingresa nombre de usuario</label>
-                        <br/>
-                        <input 
-                        type="text" 
-                        placeholder="Nombre de usuario"
-                        value={usuario}
-                        onChange={(e) => setUsuario(e.target.value)}
-                        />
-                        <br/>
-                        <br/>
-                        <label>Ingrese su contraseña</label>
-                        <input type="password" 
-                        placeholder="Contraseña"
-                        value={pass}
-                        onChange={(e)=> setPass(e.target.value)}
-                        />
-                        <br/>
-                        <div>
-                            <button class="btn-blue" onClick={handleLogin}>Iniciar Sesión</button>
-                        </div>
-                        <div>
+                        <h2>Iniciar sesión</h2>
+                            <FloatingLabel controlId="floatingInput" label="Correo electrónico"className="mb-3">
+                                <Form.Control type="email" placeholder="name@example.com"
+                                value={email}
+                                onChange={(e)=> setEmail(e.target.value)}/>
+                            </FloatingLabel>
+                            <FloatingLabel controlId="floatingPassword" label="Contraseña">
+                                <Form.Control type="password" placeholder="Password"
+                                value={pass}
+                                onChange={(e)=> setPass(e.target.value)}/>
+                            </FloatingLabel>
+                    <div>
                             <br/>
-                            <p>¿Aún no tienes tu cuenta?</p>
-                            <button>
-                                <Link to ="/registro" className="coustome-link">Registrate aquí</Link>
-                            </button>
-                        </div>
+                    <button class="btn-blue" onClick={handleLogin}>Iniciar Sesión</button>
+                </div>
+                <div>
+                    <br/>
+                        <p>¿Aún no tienes tu cuenta?</p>
+                    <button>
+                        <Link to ="/registro" className="coustome-link">Registrate aquí</Link>
+                    </button>
+                </div>
                     </div>
                 </div>
             </div>
             {message && <p>{message}</p>}
         </div>
     </div>
+        </>
     );
 }
 

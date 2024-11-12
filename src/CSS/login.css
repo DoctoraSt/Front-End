@@ -9,6 +9,10 @@ body{
     border-radius: 20px;
 }
 
+.col-6{
+    margin: 20px;
+}
+
 input{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: none;

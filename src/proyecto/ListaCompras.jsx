@@ -6,6 +6,7 @@ import nintendo from '../CSS/images/NintendoSwitch.png';
 import play from '../CSS/images/play5.png';
 import carrito from '../CSS/images/carrito.png';
 import BarraNav from "./BarraNav";
+import Footer from "./footer";
 
 
 function ListaCompras() {
@@ -27,10 +28,6 @@ function ListaCompras() {
                 </div>
             </div>
         </div>
-
-        <footer>
-            <p>Proyecto de programación web 2</p>
-        </footer>
         </>
     );
 }
