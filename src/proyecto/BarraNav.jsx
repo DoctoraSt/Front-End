@@ -17,6 +17,7 @@ function BarraNav() {
                     <Nav className="me-auto">
                         <Nav.Link href="./lista-compras">Inicio</Nav.Link>
                         <Nav.Link href="#link">Promociones</Nav.Link>
+                        <Nav.Link href="./BusquedaAvan">Búsqueda avanzada</Nav.Link>
                         <NavDropdown title="Información personal" id="basic-nav-dropdown">
                             <NavDropdown.Item href="./Miperfil">Mi perfil</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Mis tarjetas</NavDropdown.Item>

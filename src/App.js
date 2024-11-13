@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import BarraNav from "./proyecto/BarraNav";
 import Layout from "./proyecto/Layout";
 import Miperfil from "./proyecto/Miperfil";
+import BusquedaAvan from "./proyecto/BusquedaAvan";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route element={<Layout/>}>
           <Route path="/lista-compras" element={<ListaCompras/>}/>
           <Route path="/Miperfil" element={<Miperfil/>}/>
+          <Route path="/BusquedaAvan" element={<BusquedaAvan/>}/>
         </Route>
 
         {/* Si agregas más rutas*/}
