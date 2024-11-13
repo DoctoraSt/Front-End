@@ -1,12 +1,9 @@
 import React from "react";
 import '../CSS/listacompras.css';
-import icono from '../CSS/images/list.png';
 import '../CSS/bootstrapCSS/bootstrap.css';
 import nintendo from '../CSS/images/NintendoSwitch.png';
 import play from '../CSS/images/play5.png';
 import carrito from '../CSS/images/carrito.png';
-import BarraNav from "./BarraNav";
-import Footer from "./footer";
 
 
 function ListaCompras() {
