@@ -9,6 +9,7 @@ import BarraNav from "./proyecto/BarraNav";
 import Layout from "./proyecto/Layout";
 import Miperfil from "./proyecto/Miperfil";
 import BusquedaAvan from "./proyecto/BusquedaAvan";
+import Promociones from "./proyecto/promociones";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/lista-compras" element={<ListaCompras/>}/>
           <Route path="/Miperfil" element={<Miperfil/>}/>
           <Route path="/BusquedaAvan" element={<BusquedaAvan/>}/>
+          <Route path="/Promociones" element={<Promociones/>}/>
         </Route>
 
         {/* Si agregas más rutas*/}
