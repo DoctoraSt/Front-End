@@ -7,17 +7,6 @@ input{
     width: 100%;
 }
 
-button{
-    background-color: #2B7B8C;
-    border: none;
-    border-radius: 10px;
-    color: #BFBBB8;
-}
-
-button:hover{
-    background-color: #BFBBB8;
-    color: #2B7B8C;
-}
 
 .coustome-link{
     background-color: #2B7B8C;

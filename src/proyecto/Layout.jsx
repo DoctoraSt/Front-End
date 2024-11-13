@@ -8,7 +8,6 @@ function Layout(){
     return(
         <>
         <BarraNav/>
-        <Miperfil/>
         <Outlet/>
         <Footer/>
         </>

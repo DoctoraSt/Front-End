@@ -6,6 +6,7 @@ import icono from '../CSS/images/list.png';
 import axios from "axios";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
+import { Button } from "react-bootstrap";
 
 function Registro(){
     const [usuario, setUsuario] = useState('');
@@ -16,7 +17,6 @@ function Registro(){
 
     const sendDatos = () =>{
         //Validaciones
-
         axios.post("http://localhost:3000/Lista",{
             usuario: usuario,
             email: email,
@@ -31,7 +31,7 @@ function Registro(){
     const RegistroExitosoComponent = () =>(
         <div className="">
             <h2>Registro completo</h2>
-            <p>Favor de completa la información adicional:</p>
+            <p>Favor de completar la información adicional:</p>
             <Link to={`/informacion-adicional/${email}`} className="">Continuar</Link>
         </div>
     );
@@ -70,12 +70,11 @@ function Registro(){
                             </FloatingLabel>
                         </div>
                         <div>
-                            <button onClick={sendDatos}>Registrar</button>
+                            <Button onClick={sendDatos} className="coustome-link">Registrar</Button>
                         </div>
                         <br/>
-                        <button>
-                            <Link to="/Login" class="coustome-link">¿Ya tienes cuenta? Iniciar sesión</Link>
-                        </button>
+                        <p>¿Ya tienes cuenta?</p>
+                        <Button href ="/Login" className="coustome-link">Iniciar sesión</Button>
                     </div>
                     {message && <p>{message}</p>}
                     </>

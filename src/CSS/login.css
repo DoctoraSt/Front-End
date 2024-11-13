@@ -19,16 +19,6 @@ input{
     color: #0D0D0D;
 }
 
-button{
-    background-color: #2B7B8C;
-    color: #BFBBB8;
-}
-
-button:hover{
-    background-color: #BFBBB8;
-    color: #2B7B8C;
-}
-
 .container{
     display: flex;
     justify-content: center;

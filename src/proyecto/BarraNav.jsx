@@ -20,6 +20,7 @@ function BarraNav() {
                         <NavDropdown title="Información personal" id="basic-nav-dropdown">
                             <NavDropdown.Item href="./Miperfil">Mi perfil</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Mis tarjetas</NavDropdown.Item>
+                            <NavDropdown.Item href="./login">Cerrar sesión</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

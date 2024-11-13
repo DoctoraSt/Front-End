@@ -6,6 +6,7 @@ import icono from '../CSS/images/list.png';
 import axios from 'axios';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
+import { Button } from "react-bootstrap";
 
 //Parte de arriba donde se coloca toda la lógica para cargar la información
 function Login(){
@@ -61,17 +62,11 @@ function Login(){
                                 value={pass}
                                 onChange={(e)=> setPass(e.target.value)}/>
                             </FloatingLabel>
-                    <div>
-                            <br/>
-                    <button class="btn-blue" onClick={handleLogin}>Iniciar Sesión</button>
-                </div>
-                <div>
-                    <br/>
+                            <br />
+                            <Button onClick={handleLogin} className="coustome-link">Iniciar Sesión</Button>
+                            <br />
                         <p>¿Aún no tienes tu cuenta?</p>
-                    <button>
-                        <Link to ="/registro" className="coustome-link">Registrate aquí</Link>
-                    </button>
-                </div>
+                        <Button href ="/registro" className="coustome-link">Registrate aquí</Button>
                     </div>
                 </div>
             </div>
