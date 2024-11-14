@@ -5,7 +5,6 @@ import { Navigate } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ListaCompras from "./proyecto/ListaCompras";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BarraNav from "./proyecto/BarraNav";
 import Layout from "./proyecto/Layout";
 import Miperfil from "./proyecto/Miperfil";
 import BusquedaAvan from "./proyecto/BusquedaAvan";
