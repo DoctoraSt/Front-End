@@ -16,6 +16,9 @@ function Miperfil(){
                     <FloatingLabel controlId="floatingLabel" label="Nombre de usuario" className="mb-3">
                         <Form.Control type="text" placeholder="Nombre de ususario"/>
                     </FloatingLabel>
+                    <FloatingLabel controlId="floatingPassword" label="Apellidos">
+                        <Form.Control type="text" placeholder="Apellidos" />
+                    </FloatingLabel>
                     <FloatingLabel controlId="floatingInput" label="Correo electrónico" className="mb-3">
                             <Form.Control type="email" placeholder="name@example.com" />
                     </FloatingLabel>

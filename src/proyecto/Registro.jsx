@@ -12,6 +12,7 @@ function Registro(){
     const [usuario, setUsuario] = useState('');
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
+    const [lastName, setlastName] = useState('');
     const [message, setMessage] = useState('');
     const [registroExitoso, setRegistroExitoso] = useState(false);
 
@@ -21,6 +22,7 @@ function Registro(){
             usuario: usuario,
             email: email,
             pass: pass,
+            lastName: lastName,
         }).then(() =>{
             setMessage("Registro completado");
             setRegistroExitoso(true); //Cambio estado a true cuando el registro está realizado
@@ -57,6 +59,11 @@ function Registro(){
                                 <Form.Control type="text" placeholder="Nombre de usuario"
                                 value={usuario}
                                 onChange={(e)=> setUsuario(e.target.value)}/>
+                            </FloatingLabel>
+                            <FloatingLabel controlId="floatingInput" label="Apelidos" className="mb-3">
+                                <Form.Control type="text" placeholder="Apellidos"
+                                value={pass}
+                                onChange={(e)=> setlastName(e.target.value)}/>
                             </FloatingLabel>
                             <FloatingLabel controlId="floatingInput" label="Correo Electrónico" className="mb-3">
                                 <Form.Control type="email" placeholder="name@example.com" 
