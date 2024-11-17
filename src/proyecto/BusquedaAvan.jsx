@@ -24,7 +24,7 @@ function BusquedaAvan() {
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Row className="mb-3">
             <Form.Group as={Col} md="4" controlId="validationCustom01">
-                <Form.Label>Nombre producto</Form.Label>
+                <Form.Label id='producto'>Nombre producto</Form.Label>
                 <Form.Control
                     required
                     type="text"
@@ -34,7 +34,7 @@ function BusquedaAvan() {
                 <Form.Control.Feedback>Completo</Form.Control.Feedback>
             </Form.Group>
             <Form.Group as={Col} md="4" controlId="validationCustom02">
-                <Form.Label>Precio</Form.Label>
+                <Form.Label id='precio'>Precio</Form.Label>
                 <Form.Control
                     required
                     type="number"
@@ -44,7 +44,7 @@ function BusquedaAvan() {
                 <Form.Control.Feedback>Completo</Form.Control.Feedback>
             </Form.Group>
             <Form.Group as={Col} md="4" controlId="validationCustom01">
-                <Form.Label>Categoría</Form.Label>
+                <Form.Label id='categoria'>Categoría</Form.Label>
                 <Form.Control
                     required
                     type="text"

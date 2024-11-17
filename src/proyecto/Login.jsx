@@ -52,12 +52,12 @@ function Login(){
                     </div>
                     <div className="col-6">
                         <h2>Iniciar sesión</h2>
-                            <FloatingLabel controlId="floatingInput" label="Correo electrónico"className="mb-3">
+                            <FloatingLabel controlId="floatingInput" label="Correo electrónico"className="mb-3" id="CorreoLogin">
                                 <Form.Control type="email" placeholder="name@example.com"
                                 value={email}
                                 onChange={(e)=> setEmail(e.target.value)}/>
                             </FloatingLabel>
-                            <FloatingLabel controlId="floatingPassword" label="Contraseña">
+                            <FloatingLabel controlId="floatingPassword" label="Contraseña" id="PasswordLogin">
                                 <Form.Control type="password" placeholder="Password"
                                 value={pass}
                                 onChange={(e)=> setPass(e.target.value)}/>

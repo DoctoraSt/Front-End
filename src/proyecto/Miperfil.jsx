@@ -13,14 +13,15 @@ function Miperfil(){
             <div className="row">
                 <h2 className="col-4">Información de usuario</h2>
                 <div className="col-6">
-                    <FloatingLabel controlId="floatingLabel" label="Nombre de usuario" className="mb-3">
+                    <FloatingLabel controlId="floatingLabel" label="Nombre de usuario" className="mb-3" id="Usuario">
                         <Form.Control type="text" placeholder="Nombre de ususario"/>
                     </FloatingLabel>
                     <FloatingLabel controlId="floatingPassword" label="Apellidos">
                         <Form.Control type="text" placeholder="Apellidos" />
                     </FloatingLabel>
+                    <br />
                     <FloatingLabel controlId="floatingInput" label="Correo electrónico" className="mb-3">
-                            <Form.Control type="email" placeholder="name@example.com" />
+                        <Form.Control type="email" placeholder="name@example.com" />
                     </FloatingLabel>
                     <FloatingLabel controlId="floatingPassword" label="Password">
                         <Form.Control type="password" placeholder="Contraseña" />
