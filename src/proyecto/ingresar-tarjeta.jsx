@@ -9,16 +9,16 @@ function metodoPago(){
     <div className="contenedor-grande">
         <div className="contenedor">
             <div className="row">
-                <h2 className="col-4">Información de usuario</h2>
+                <h2 className="col-4">Datos de tarjeta</h2>
                 <div className="col-6">
-                    <FloatingLabel controlId="floatingLabel" label="Nombre de usuario" className="mb-3">
-                        <Form.Control type="text" placeholder="Nombre de ususario"/>
+                    <FloatingLabel controlId="floatingLabel" label="Nombre en tarjeta" className="mb-3">
+                        <Form.Control type="text" placeholder="Nombre completo"/>
                     </FloatingLabel>
-                    <FloatingLabel controlId="floatingInput" label="Email address" className="mb-3">
-                            <Form.Control type="email" placeholder="name@example.com" />
+                    <FloatingLabel controlId="floatingInput" label="Número de tarjeta" className="mb-3">
+                            <Form.Control type="number" placeholder="Número de tarjeta" />
                     </FloatingLabel>
-                    <FloatingLabel controlId="floatingPassword" label="Password">
-                        <Form.Control type="password" placeholder="Password" />
+                    <FloatingLabel controlId="floatingPassword" label="CVV">
+                        <Form.Control type="number" placeholder="CVV" />
                     </FloatingLabel>
                     <br />
                 <Button  className="coustome-link">Aceptar cambios</Button>

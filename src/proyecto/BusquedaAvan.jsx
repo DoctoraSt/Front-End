@@ -58,6 +58,40 @@ function BusquedaAvan() {
             </div>
             </Row>
         </Form>
+        <div>
+            <h2>Resultados:</h2>
+            <Form noValidate validated={validated} onSubmit={handleSubmit}>
+            <Row className="mb-3">
+            <Form.Group as={Col} md="4" controlId="validationCustom01">
+                <Form.Label>Nombre producto</Form.Label>
+                <Form.Control
+                    placeholder="Nombre de producto"
+                    readOnly
+                />
+                <Form.Control.Feedback>Completo</Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} md="4" controlId="validationCustom02">
+                <Form.Label>Precio</Form.Label>
+                <Form.Control
+                    placeholder='Precio'
+                    readOnly
+                />
+                <Form.Control.Feedback>Completo</Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} md="4" controlId="validationCustom01">
+                <Form.Label>Categoría</Form.Label>
+                <Form.Control
+                    placeholder="Categoría"
+                    readOnly
+                />
+                <Form.Control.Feedback>Completo</Form.Control.Feedback>
+            </Form.Group>
+            <div className='boton'>
+            <Button type="submit" className='coustome-link'>Aceptar</Button>
+            </div>
+            </Row>
+        </Form>
+        </div>
     </div>
     );
 }

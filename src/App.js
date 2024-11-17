@@ -28,7 +28,7 @@ function App() {
           <Route path="/BusquedaAvan" element={<BusquedaAvan/>}/>
           <Route path="/Promociones" element={<Promociones/>}/>
           <Route path="/mis-tarjetas" element={<MisTarjetas/>}/>
-          <Route path="/metodo-pago" element={<metodoPago/>}/>
+          <Route path="/metodo-pago" element={<MetodoPago/>}/>
         </Route>
 
         {/* Si agregas más rutas*/}

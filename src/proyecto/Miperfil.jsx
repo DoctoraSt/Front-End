@@ -16,12 +16,15 @@ function Miperfil(){
                     <FloatingLabel controlId="floatingLabel" label="Nombre de usuario" className="mb-3">
                         <Form.Control type="text" placeholder="Nombre de ususario"/>
                     </FloatingLabel>
-                    <FloatingLabel controlId="floatingInput" label="Email address" className="mb-3">
+                    <FloatingLabel controlId="floatingInput" label="Correo electrónico" className="mb-3">
                             <Form.Control type="email" placeholder="name@example.com" />
                     </FloatingLabel>
                     <FloatingLabel controlId="floatingPassword" label="Password">
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" placeholder="Contraseña" />
                     </FloatingLabel>
+                    <br />
+                    <Button className="coustome-link" href={"/metodo-Pago"}>Ingresar método de pago</Button>
+                    <br />
                     <br />
                 <Button  className="coustome-link">Aceptar cambios</Button>
                 <br/>
