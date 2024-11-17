@@ -11,14 +11,14 @@ function metodoPago(){
             <div className="row">
                 <h2 className="col-4">Datos de tarjeta</h2>
                 <div className="col-6">
-                    <FloatingLabel controlId="floatingLabel" label="Nombre en tarjeta" className="mb-3">
+                    <FloatingLabel controlId="floatingLabel" label="Nombre en tarjeta" className="mb-3" id="usuarioTarjeta">
                         <Form.Control type="text" placeholder="Nombre completo"/>
                     </FloatingLabel>
-                    <FloatingLabel controlId="floatingInput" label="Número de tarjeta" className="mb-3">
+                    <FloatingLabel controlId="floatingInput" label="Número de tarjeta" className="mb-3" id="numeroTarjeta">
                             <Form.Control type="number" placeholder="Número de tarjeta" />
                     </FloatingLabel>
-                    <FloatingLabel controlId="floatingPassword" label="CVV">
-                        <Form.Control type="number" placeholder="CVV" />
+                    <FloatingLabel controlId="floatingPassword" label="CVV" id="CVV">
+                        <Form.Control type="number" placeholder="CVV"/>
                     </FloatingLabel>
                     <br />
                 <Button  className="coustome-link">Aceptar cambios</Button>

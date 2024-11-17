@@ -67,6 +67,7 @@ function BusquedaAvan() {
                 <Form.Control
                     placeholder="Nombre de producto"
                     readOnly
+                    id='productoRespuesta'
                 />
                 <Form.Control.Feedback>Completo</Form.Control.Feedback>
             </Form.Group>
@@ -75,6 +76,7 @@ function BusquedaAvan() {
                 <Form.Control
                     placeholder='Precio'
                     readOnly
+                    id='precioRespuesta'
                 />
                 <Form.Control.Feedback>Completo</Form.Control.Feedback>
             </Form.Group>
@@ -83,6 +85,7 @@ function BusquedaAvan() {
                 <Form.Control
                     placeholder="Categoría"
                     readOnly
+                    id='categoriaRespuesta'
                 />
                 <Form.Control.Feedback>Completo</Form.Control.Feedback>
             </Form.Group>
