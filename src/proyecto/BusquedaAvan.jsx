@@ -20,6 +20,7 @@ function BusquedaAvan() {
 
     return (
     <div className='contenedor-avan'>
+        <h2>Búsqueda avanzada</h2>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Row className="mb-3">
             <Form.Group as={Col} md="4" controlId="validationCustom01">
